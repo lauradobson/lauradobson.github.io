@@ -39,14 +39,12 @@ Modules - reusable parts of our design
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  
 }
 .cd-container::after {
   /* clearfix */
   content: '';
   display: table;
   clear: both;
-  
 }
 
 /* -------------------------------- 
@@ -97,9 +95,6 @@ Main components
   top: 0;
   left: 0;
   background: #FFF;
-  border-radius: 0.25em;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  
 }
 .cd-filter li {
   display: none;
@@ -177,7 +172,6 @@ Main components
     height: auto;
     width: auto;
     line-height: 1;
-    border-radius: 50em !important;
   }
   .no-touch .cd-filter a:hover {
     box-shadow: inset 0 0 0 2px rgba(56, 56, 56, 0.2);
@@ -247,11 +241,10 @@ xgallery
 .cd-gallery .cd-item-wrapper > li img {
   display: block;
   width: 100%;
-  border-radius: 0.25em;
 }
 .cd-gallery li.is-visible {
   /* the front item, visible by default */
-  position: absolute;
+  position: relative;
   z-index: 5;
 }
 .cd-gallery li.is-hidden {
